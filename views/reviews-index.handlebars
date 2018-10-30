@@ -1,0 +1,12 @@
+<center><h1>Reviews</h1></center>
+<div class="row">
+  {{#each reviews}}
+    <div class="col-sm-3">
+        <br><br>
+        <center><h4><b>{{this.movieTitle}}</b></h4></center>
+        <center><h4>{{this.movieRating}} potatoes</h4></center>
+        <center><h4><a href="/reviews/{{this._id}}">{{this.title}}</a></h4></center>
+        <br>
+    </div>
+  {{/each}}
+</div>
